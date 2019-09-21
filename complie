@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+count = 0
+
+for i in *.cpp
+    do
+        count++
+    done
+
+
+if [ "$count" != 0 ]
+    then
+        for i in *.cpp{
+            do  
+                cppFiles += "$i "
+            done
+        
+        echo "g++ $cppFiles -Wall -std=c+11 -o -exeFile"
+else
+        echo "You don't have any cpp files please check your directory..."
+fi 
