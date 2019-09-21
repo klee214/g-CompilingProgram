@@ -1,22 +1,37 @@
 #!/bin/bash
 
+# this program is simple automatic compile program
+# if you are sick of typing g++ blah blah blah 
+# this program make your life easier
+# to compile your cpp codes just type "compile"
+# this will automatically catch your code files and export PATH and compile for you
 
-count = 0
+pathSet="PATH=$PATH:."
+grep "$pathSet" ~/.bash_profile >/dev/null 2> /dev/null
 
-for i in *.cpp
-    do
-        count++
-    done
+# checking if the path already in the profile, if not adding the path on it
+if [ $? -ne 0 ]
+   then
+	echo "export PATH=$PATH:." >> ~/.bash_profile 2> /dev/null
+fi
 
+# checking if there is cpp files in the current directory
+ls *.cpp 2>/dev/null
 
-if [ "$count" != 0 ]
+if [ $? -eq 0 ]
     then
-        for i in *.cpp{
+        for i in $(ls *.cpp)
             do  
-                cppFiles += "$i "
+                cppFiles+="$i "
             done
         
-        echo "g++ $cppFiles -Wall -std=c+11 -o -exeFile"
+        g++ $cppFiles-Wall -std=c++11 -o exeFile
+	if [ $? -eq 0 ]
+	   then 
+		echo "Compile success!! run the program by typing \"exeFile\""
+	else
+		echo "Something wrong with your codes!!"
+	fi
 else
         echo "You don't have any cpp files please check your directory..."
 fi 
