@@ -1,4 +1,4 @@
-## g-CompilingProgram
+## g++-CompilingProgram
 ## Synopsis
 
 This program is written in bash. And very simple compiliation program. This program automatically catch all cpp files in the directory and compile them for you
