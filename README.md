@@ -30,7 +30,7 @@ The simple way to use this CLI tool is :<br/>
 
 Or <br/>
 `git clone <this repo URL>` <br/>
-run 'compile'
+run `compile`
 ## Contributors
 
 Kimin Lee 
