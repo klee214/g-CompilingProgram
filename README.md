@@ -27,8 +27,8 @@ Something wrong with your codes!!
 The simple way to use this CLI tool is :<br/>
 1. Make a bash program on your linux/unix server<br/>
 2. Copy this code and paste into your program<br/>
-Or
-`git clone <this repo URL>`
+Or <br/>
+`git clone <this repo URL>` <br/>
 run 'compile'
 ## Contributors
 
