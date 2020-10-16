@@ -1,7 +1,7 @@
 # g++-CompilingProgram
 ## Description
 Everytime writing g++ blah blah blah is very annoying! By using this simple program, make our lives more effcient!
-For all Seneca users who will submit your c++ labs and assingments through matrix server, this tool will save your time to manually compile your C++ program. Using Bash, it automatically generate `g++` command for you!
+For all Seneca students who will submit your c++ labs and assingments through matrix server, this tool will save your time to manually compile your C++ program. Using Bash, it automatically generate `g++` command for you!
 
 This program is written in bash. And very simple compiliation program. This program automatically catch all cpp, h files in your current directory and compile them for you.
 
